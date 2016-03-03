@@ -1,7 +1,4 @@
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created by Анна on 03.03.2016.
@@ -14,6 +11,11 @@ public void ThisIsBeforeTest(){
     @BeforeMethod
     public void ThisBeforeTestMethod(){
         System.out.println( " This is before testMethod");
+    }
+
+    @AfterTest
+    public void ThisIsAfterTest(){
+        System.out.println("This is our test case (after");
     }
     @AfterMethod
     public void ThisAfterTestMethod (){
